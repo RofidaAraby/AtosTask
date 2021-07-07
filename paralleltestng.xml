@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Php" parallel="tests" thread-count="2" verbose="10">
+    <test name="onChrome ">
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="tests.TestBase"></class>
+            <class name="tests.UserRegitrationTest"></class>
+
+        </classes>
+    </test>
+    <test name="onFirefox ">
+        <parameter name="browserName" value="firefox"/>
+        <classes>
+            <class name="tests.TestBase"></class>
+            <class name="tests.UserRegitrationTest"></class>
+        </classes>
+    </test>
+
+</suite>
